@@ -102,6 +102,10 @@
   text-align: center;
   padding-top: 13%;
   font-size: 6rem;
+  text-decoration: underline;
+  text-underline-position: 3px;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 3px; 
 }
  
 .page-two-paragraph{
@@ -135,12 +139,36 @@
   border-radius: 10px;
 }
 
+.loc:after {
+  content: "...................................";
+  color: transparent;
+}
+
+.loc{
+  text-decoration: underline;
+  text-underline-position: 3px;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1.5px; 
+}
+
+.hrs:after {
+  content: "............................................................";
+  color: transparent;
+}
+
+.hrs{
+  text-decoration: underline;
+  text-underline-position: 3px;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1.5px; 
+}
 .business-hours {
   color: #ffffff;
   max-width: 600px;
   margin-top: 5%;
   padding: 30px;
   margin-left: 50px;
+  
 }
 
 .day-time {
@@ -192,6 +220,10 @@
   text-align: center;
   font-size: 6rem;
   margin-bottom: 20px;
+  text-decoration: underline;
+  text-underline-position: 3px;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 3px; 
 }
 
 .footer {
