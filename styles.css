@@ -180,6 +180,7 @@
   height: 100vh;
   background-color: #485E32;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
@@ -187,5 +188,69 @@
 
 .Event-title{
   color:white;
-  padding: 20px;
+  position:block; 
+  text-align: center;
+  font-size: 6rem;
+  margin-bottom: 20px;
+}
+
+.footer {
+  margin-top: auto;
+  background-color: #F9F9F9;
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.contact-info i {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.right-section {
+  text-align: right;
+}
+
+.social-media {
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  margin-right: 10px;
+  color: black;
+  font-size: 20px;
+}
+
+.fa-envelope a{
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fa-phone span{
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+.copyright {
+  text-align: right;
 }
