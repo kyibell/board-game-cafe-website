@@ -64,10 +64,9 @@
   }
   
   .fa-bars, .fa-xmark {
-    display: none !important;
+    display: none;
   }
   
-
   @media (max-width: 768px) {
     nav {
       position: absolute;
