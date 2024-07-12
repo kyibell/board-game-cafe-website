@@ -3,7 +3,6 @@
     padding: 0;
     font-family: "K2D", sans-serif;
     box-sizing: border-box;
-    overflow: hidden;
   }
   
   nav {
@@ -68,56 +67,42 @@
   }
 
   .Page-One {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background-color: #F4F4F4;
-    flex-direction: column;
+  }
+
+  .Page-One-Text{
+    min-height: 100vh;
   }
   
-  .Page-One-Content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 0 0 0 15%;
-  }
-  
-  .Page-One-Text {
-    max-width: 70%;
-    margin-right: auto; 
-  }
   
   .Page-One-Title {
     font-size: 8rem;
     padding: 0 0 2% 0;
-    white-space: nowrap; 
-  }
-  
+    padding: 15% 0 0 15%;
+}
+
   .Page-One-paragraph {
-    font-size: 1.2rem;
+      font-size: 1.2rem;
+      padding: 0% 0 0 15%;
   }
-  
+
   .Page-One-Button {
-    display: block;
     color: white;
     text-decoration: none;
     border: 1px solid #85ae5d;
     padding: 10px 20px;
     font-size: 16px;
-    margin: 1.5rem 0;
+    margin: 1% 0 0 15%;
     background: #85ae5d;
     font-weight: 600;
     border-radius: 10px;
   }
-  
-  .Boba-Pic {
-    width: 50rem;
-    transform: rotate(15deg); 
-    margin-right: auto;
-    margin-bottom: 10%;
-  }
 
+.page-two { 
+    width: 100%;
+    height: 100vh;
+    background-color: #DEE9D3;
+}
 
  
   
