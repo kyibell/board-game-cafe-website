@@ -16,23 +16,23 @@ let objToRender = "coffee_shop_cup";
 const loader = new GLTFLoader();
 
 loader.load(
-    "${objToRender}/scene.gltf",
+    "./coffee_shop_cup/scene.gltf",
     function(gltf) {
         object = gltf.scene;
         scene.add(object);
     },
-    function (xhr) {
+    function (xhr) { //Shows Loading Percentage
         console.log((xhr.loaded / xhr.total *100) + "% loaded");
     
     },
 
-    function (error) {
+    function (error) { //Shows Error if Possible Error
         console.error(error);
     }
 );
 
 const renderer = new THREE.WebGLRenderer({alpha: true});
-camera.position.z = 5;
+camera.position.set(1.5,1,0);
 
 const topLight = new THREE.DirectionalLight(0xfffffff, 1);
 topLight.position.set(500, 500, 500);
@@ -41,9 +41,13 @@ scene.add(topLight);
 
 controls = new OrbitControls(camera, renderer.domElement);
 
+document.getElementById("coffeemodel").appendChild(renderer.domElement);
+
+
 function animate() {
     requestAnimationFrame(animate);
 
     renderer.render(scene,camera);
 }
+
 animate();
