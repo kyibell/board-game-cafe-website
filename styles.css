@@ -3,6 +3,7 @@
     padding: 0;
     font-family: "K2D", sans-serif;
     box-sizing: border-box;
+    overflow: hidden;
   }
   
   nav {
@@ -79,20 +80,22 @@
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 1200px; /* Adjust max-width as needed */
+    max-width: 1200px;
     margin: 0 auto;
   }
   
   .Page-One-Text {
     max-width: 70%;
-    margin-right: auto; /* Ensure text stays on the left */
+    margin-right: auto; 
   }
   
   .Page-One-Title {
     font-size: 8rem;
     padding: 0 0 2% 0;
     margin-left: 5%;
-    white-space: nowrap; /* Ensures text does not wrap */
+    white-space: nowrap; 
+    z-index: 2
+;
   }
   
   .Page-One-paragraph {
@@ -117,7 +120,7 @@
   .Boba-Pic {
     width: 50rem;
     transform: rotate(15deg);
-    margin-left: auto; /* Aligns image to the right */
+    margin-left: auto;
     margin-bottom: 10%;
   }
 
