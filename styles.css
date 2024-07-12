@@ -9,7 +9,6 @@
     width: 100%;
     display: flex;
     padding: 0% 2%;
-    margin: 0% 0% 0% 0%;
     justify-content: space-between;
     align-items: center;
     position: sticky;
@@ -20,11 +19,6 @@
     width: 100px;
   }
 
-  
-  .links {
-    flex: 1;
-  }
-  
   .links ul {
     list-style: none;
     display: flex;
@@ -128,13 +122,14 @@
   padding: 20px;
 }
 
-
 .content-wrapper {
   display: flex;
+  gap: 10%;
 }
 
 .google-map {
   position: relative;
+  margin-right: 50px; 
 }
 
 .google-map iframe {  
@@ -142,11 +137,11 @@
 }
 
 .business-hours {
-  
   color: #ffffff;
   max-width: 600px;
   margin-top: 5%;
   padding: 30px;
+  margin-left: 50px;
 }
 
 .day-time {
@@ -165,14 +160,18 @@
   text-align: right;
 }
 
+.note{
+  text-align: center;
+}
+
 .reserve-button {
   color: white;
   text-decoration: none;
-  border: 1px solid #85ae5d;
-  padding: 10px 20px;
+  border: 1px solid #85AE5D;
+  padding: 9px 20px;
   font-size: 16px;
-  margin: 1% 0 0 15%;
-  background: #85ae5d;
+  margin: 5% 23%;
+  background: #85AE5D;
   font-weight: 600;
   border-radius: 10px;
 }
