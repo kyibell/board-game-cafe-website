@@ -3,7 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sip & Play</title>
+    <title>Sip & Play | Brooklyn's Board Game Cafe</title>
+    <meta
+      name="description"
+      content="Sip & Play is Brooklyn's premier board game cafe. Enjoy bubble tea, coffee, and a vast collection of board games in a cozy environment."
+    />
+    <link rel="canonical" href="https://www.sipandplay.com/" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="sipnplay.png" />
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Sip & Play | Brooklyn's Best Board Game Cafe"
+    />
+    <meta
+      property="og:description"
+      content="Sip & Play is Brooklyn's premier board game cafe. Enjoy bubble tea, coffee, and a vast collection of board games in a cozy environment."
+    />
+    <meta property="og:url" content="https://www.sipandplay.com/" />
+    <meta
+      property="og:image"
+      content="https://www.sipandplay.com/images/og-image.jpg"
+    />
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Sip & Play | Brooklyn's Best Board Game Cafe"
+    />
+    <meta
+      name="twitter:description"
+      content="Sip & Play is Brooklyn's premier board game cafe. Enjoy bubble tea, coffee, and a vast collection of board games in a cozy environment."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.sipandplay.com/images/twitter-card.jpg"
+    />
+    <!--CSs Link-->
     <link rel="stylesheet" href="./styles.css" />
     <!--Tab Icon-->
     <link rel="icon" href="./sipnplay.png" />
@@ -19,11 +55,18 @@
       src="https://kit.fontawesome.com/cab2c84ee9.js"
       crossorigin="anonymous"
     ></script>
+    <!--JS Link-->
+    <link href="/script.js" />
   </head>
+
   <body>
+    <!--Navigation Bar-->
     <nav>
+      <!--logo-->
       <a href="index.html"><img src="./sipnplay.png" id="Logo" /></a>
-      <div class="links">
+      <div class="links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <!--Navigation Options-->
         <ul>
           <li class="active"><a href="./index.html">Home</a></li>
           <li><a href="./about.html">About</a></li>
@@ -43,6 +86,7 @@
           <li><a href="./Contacts.html">Contact Us</a></li>
         </ul>
       </div>
+      <!--socials-->
       <div class="social-media">
         <a href="https://www.instagram.com/sipnplaynyc/?hl=en"
           ><i class="fa-brands fa-instagram"></i
@@ -54,7 +98,10 @@
           ><i class="fa-brands fa-discord"></i
         ></a>
       </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
     </nav>
+    <!--End of Navigation-->
+    <!--Page 1-->
     <div class="Page-One">
       <div class="boba-img"><img src="/Boba.webp" /></div>
       <div class="Page-One-Text">
@@ -68,6 +115,7 @@
         >
       </div>
     </div>
+    <!--Page 2-->
     <div class="page-two">
       <h2 class="page-two-title">How It Works</h2>
       <p class="page-two-paragraph">
@@ -82,8 +130,10 @@
     <div class="wiggle">
       <img src="wiggle.svg" />
     </div>
+    <!--Page 3-->
     <div class="page-three">
       <div class="content-wrapper">
+        <!--Location-->
         <div class="google-map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.265029832684!2d-73.98949232358817!3d40.66812904029963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25afce910cb65%3A0x51750a9972fb4c0a!2s471%205th%20Ave%2C%20Brooklyn%2C%20NY%2011215%2C%20USA!5e0!3m2!1sen!2ssa!4v1720747367723!5m2!1sen!2ssa"
@@ -95,6 +145,7 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
+        <!--hours-->
         <div class="business-hours">
           <h3 class="loc">Brooklyn, NY</h3>
           <h4 class="hrs">Hours</h4>
@@ -115,6 +166,7 @@
             <span class="time">10am-12am</span>
           </div>
           <div class="line-above-note">-</div>
+          <!--note-->
           <p class="note">
             ** Our Kitchen Closes 2.5-3 Hours before we close! **
           </p>
@@ -128,20 +180,26 @@
     <div class="wiggle2">
       <img src="wiggle2.svg" />
     </div>
+
+    <!--Page 4-->
     <div class="page-four">
       <h2 class="Event-title">Event Calendar</h2>
-      <iframe
-        src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=America%2FChicago&bgcolor=%23fbfef9&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&mode=MONTH&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%230B8043"
-        style="border-width: 0"
-        width="800"
-        height="600"
-        frameborder="0"
-        scrolling="no"
-      ></iframe>
+      <div class="google-calendar">
+        <iframe
+          src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=America%2FChicago&bgcolor=%23fbfef9&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&mode=MONTH&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%230B8043"
+          style="border-width: 0"
+          width="800"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </div>
     </div>
+    <!-- Footer Section -->
     <div class="footer">
       <div class="footer-container">
         <div class="left-section">
+          <!--contact info-->
           <div class="contact-info">
             <i class="fa-solid fa-phone"><span> 718-971-1684</span> </i>
             <i class="fa-solid fa-envelope">
@@ -152,6 +210,7 @@
           </div>
         </div>
         <div class="right-section">
+          <!--Socials-->
           <div class="social-media">
             <a href="https://www.instagram.com/sipnplaynyc/?hl=en"
               ><i class="fa-brands fa-instagram"></i
@@ -163,11 +222,30 @@
               ><i class="fa-brands fa-discord"></i
             ></a>
           </div>
+          <!--Copyright-->
           <div class="copyright">
             <p>&copy; 2020 by Sip & Play</p>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- JS script to open and close menu when on phone-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+          navLinks.style.transform = "translateX(0)";
+        }
+
+        function hideMenu() {
+          navLinks.style.transform = "translateX(-100%)";
+        }
+
+        window.showMenu = showMenu;
+        window.hideMenu = hideMenu;
+      });
+    </script>
   </body>
 </html>
