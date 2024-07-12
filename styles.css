@@ -4,12 +4,10 @@
     font-family: "K2D", sans-serif;
     box-sizing: border-box;
   }
-  
   nav {
     width: 100%;
     display: flex;
     padding: 0% 2%;
-    margin: 0% 0% 0% 0%;
     justify-content: space-between;
     align-items: center;
     position: sticky;
@@ -20,11 +18,6 @@
     width: 100px;
   }
 
-  
-  .links {
-    flex: 1;
-  }
-  
   .links ul {
     list-style: none;
     display: flex;
@@ -104,5 +97,95 @@
     background-color: #DEE9D3;
 }
 
+.page-two-title{
+  position:relative; 
+  text-align: center;
+  padding-top: 13%;
+  font-size: 6rem;
+}
  
-  
+.page-two-paragraph{
+  padding: 5% 25%;
+  position:relative; 
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.page-three { 
+  width: 100%;
+  height: 100vh;
+  background-color: #71865B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 10%;
+}
+
+.google-map {
+  position: relative;
+  margin-right: 50px; 
+}
+
+.google-map iframe {  
+  border-radius: 10px;
+}
+
+.business-hours {
+  color: #ffffff;
+  max-width: 600px;
+  margin-top: 5%;
+  padding: 30px;
+  margin-left: 50px;
+}
+
+.day-time {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  line-height: 3rem;
+}
+
+.day {
+  flex: 1;
+}
+
+.time {
+  flex: 1;
+  text-align: right;
+}
+
+.note{
+  text-align: center;
+}
+
+.reserve-button {
+  color: white;
+  text-decoration: none;
+  border: 1px solid #85AE5D;
+  padding: 9px 20px;
+  font-size: 16px;
+  margin: 5% 23%;
+  background: #85AE5D;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.page-four { 
+  width: 100%;
+  height: 100vh;
+  background-color: #485E32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Event-title{
+  color:white;
+  padding: 20px;
+}
