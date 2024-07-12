@@ -19,6 +19,7 @@
   }
 
   .links ul {
+    padding-left: 100px;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -323,3 +324,24 @@ text-decoration-thickness: 1.5px;
 .copyright {
   text-align: right;
 }
+
+.wiggle{
+  display: relative;
+  width: 100%;
+  height: auto; 
+  max-width: 100%;
+  z-index: 10;
+  background-color:#DEE9D3;
+  margin: -10% 0 -8% 0 ;
+}
+
+.wiggle2{
+  display: relative;
+  width: 100%;
+  height: auto; 
+  max-width: 100%;
+  z-index: 10;
+  background-color:#71865B;
+  margin: -10% 0 -8% 0 ;
+}
+
