@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "K2D", sans-serif;
+    box-sizing: border-box;
+  }
+  
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+ /* Header CSS */
+
+nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0% 2%;
+        margin: 0%;
+        position: sticky;
+        background-color: #F4F4F4; 
+        width: 100%;
+    }
+
+#Logo {
+    width: 100px;
+    display: flex;
+
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 2%;
+    margin: 0%;
+    position: sticky;
+    background-color: #F4F4F4;
+}
+
+.links {
+    flex: 1;
+    }
+
+    .links ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .links ul li {
+        display: inline-block;
+        padding: 10px 30px;
+        position: relative;
+    }
+
+    .links ul li a {
+        color: #6C6969;
+        text-decoration: none;
+    }
+
+    .link ul li a:hover {
+        color: black;
+    }
+
+    .links ul li.active a {
+        color: black;
+    }
+
+    .links ul li.active::after{
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: black;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+      }
+
+      .social-media i {
+        margin-right: 0.5rem;
+        color: black;
+        font-size: 20px;
+      }
+
+      .menu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      /* Navigation CSS */
+
+      h2 {
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        text-underline-position: 3px;
+        margin: 40px;
+        font-size: 40px;
+    }
+
+    /* Extends line for the "Menu" Text */ 
+    h2:after {
+        content: "................";
+        color: transparent;
+    }
+
+
+      .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-self: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+      }
+
+      .nav-links ul {
+        display: flex;
+        padding: 0;
+        list-style: none;
+      }
+
+      .nav-links li {
+        margin: 0 10px;
+      }
+
+      a {
+        color: #6C6969;
+        list-style-type: none;
+        text-decoration: none;
+      }
+
+     /* Menu CSS */
+
+      .coffee-section, .specialty-drink-section, .boba-section, .hot-bites-section, .sandwiches-and-salads-section, .seasonal-section, .beer-and-wine-section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1200px;
+        margin: 20px 0;
+        gap: 20px;
+      }
+      
+      .coffee-items, .coffee-model, .specialty-drink-items, .specialty-drink-model, .boba-items, .boba-model, .hot-bites-items, .hot-bites-model, .sandwiches-and-salads-items, .sandwich-model, .seasonal-items, .seasonal-model, .beer-and-wine-items, .beer-wine-model {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 48%;
+        box-sizing: border-box; /* Include padding and border in width */
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      li {
+        padding: 5px 0;
+      }
+      
+      h3 {
+        margin-top: 0;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /* Footer CSS */ 
+
+    .footer {
+        margin-top: auto;
+        background-color: #F9F9F9;
+        color: black;
+        padding: 20px 0;
+        text-align: center;
+      
+      }
+      
+      .footer-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+      }
+      
+      .left-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+      }
+      
+      .contact-info i {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      .right-section {
+        text-align: right;
+      }
+      
+      .social-media {
+        margin-bottom: 10px;
+      }
+      
+      .social-media a {
+        margin-right: 10px;
+        color: black;
+        font-size: 20px;
+      }
+      
+      .fa-envelope a{
+        text-decoration: none;
+        color: black;
+        font-weight: 100;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .fa-phone span{
+        font-weight: 100;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .social-media a:last-child {
+        margin-right: 0;
+      }
+      
+      .copyright {
+        text-align: right;
+      }
