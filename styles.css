@@ -93,6 +93,15 @@
     cursor: pointer;
   }
 
+  .boba-img img{
+    width: 45rem;
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 5rem;
+    transform: rotate(15deg)
+  }
+
 .page-two { 
     width: 100%;
     height: 100vh;
