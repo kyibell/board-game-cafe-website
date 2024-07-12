@@ -6,43 +6,44 @@ import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/js
 import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
 
 
-const renderer = new THREE.WebGLRenderer({antialias: true});
-renderer.outputColorSpace = THREE.SRGBColorSpace;
-
-renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.setClearColor(0x00000);
-renderer.setPixelRatio(widow.devicePixelRatio);
-
-document.body.appendChild(renderer.domElement);
-
 const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
-const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 1000);
-camera.position.set(4,5,11);
-// camera.lookAt(0,0,0);
+let object;
+let controls;
+let objToRender = "coffee_shop_cup";
 
-/* const groundGeometry = new THREE.PlaneGeometry(20,20,32,32);
-groundGeometry.rotateX(-Math.PI / 2);
-const groundMaterial = new THREE.MeshStandardMaterial({color: 0x55555, side: THREE.DoubleSide});
-const groundMesh = new THREE.Mesh(groundGeometry, groundMaterial);
-scene.add(groundMesh); */
+const loader = new GLTFLoader();
 
-/* const spotLight = new THREE.SpotLight(0xffffff, 3, 100, 0.2, 0.5);
-spotLight.position.set(0,25,0);
-scene.add(spotLight); */
+loader.load(
+    "${objToRender}/scene.gltf",
+    function(gltf) {
+        object = gltf.scene;
+        scene.add(object);
+    },
+    function (xhr) {
+        console.log((xhr.loaded / xhr.total *100) + "% loaded");
+    
+    },
 
-const loader = new GLTFLoader().setPath("./coffee_shop_cup");
-loader.load('scene.gltf', (gltf) => {
-    const mesh = gltf.scene;
-    mesh.posiiton.set(0, 1.05, -1);
-    scene.add(mesh);
-});
+    function (error) {
+        console.error(error);
+    }
+);
 
-document.getElementById("coffeemodel").appendChild(renderer.domElement);
+const renderer = new THREE.WebGLRenderer({alpha: true});
+camera.position.z = 5;
+
+const topLight = new THREE.DirectionalLight(0xfffffff, 1);
+topLight.position.set(500, 500, 500);
+topLight.castShadow = true;
+scene.add(topLight);
+
+controls = new OrbitControls(camera, renderer.domElement);
 
 function animate() {
     requestAnimationFrame(animate);
+
     renderer.render(scene,camera);
 }
-
 animate();
