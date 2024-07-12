@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: "K2D", sans-serif;
+    box-sizing: border-box;
   }
   
   nav {
+    width: 100%;
     display: flex;
     padding: 0% 2%;
-    margin: -1% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
     justify-content: space-between;
     align-items: center;
     position: sticky;
@@ -15,7 +17,7 @@
   }
   
   #Logo {
-    width: 150px;
+    width: 100px;
   }
 
   
@@ -31,7 +33,7 @@
   
   .links ul li {
     display: inline-block;
-    padding: 10px 36px;
+    padding: 10px 30px;
     position: relative;
   }
   
@@ -61,16 +63,63 @@
   .social-media i {
     margin-right: 0.5rem;
     color: black;
+    font-size: 20px;
   }
 
-  .page-one{
-    background-color: #6C6969;
+  .Page-One {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F4F4F4;
+    flex-direction: column;
+  }
+  
+  .Page-One-Content {
+    display: flex;
+    align-items: center;
     width: 100%;
-    min-height: 100vh;
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto;
   }
-
-
-
+  
+  .Page-One-Text {
+    max-width: 70%;
+    margin-right: auto; /* Ensure text stays on the left */
+  }
+  
+  .Page-One-Title {
+    font-size: 8rem;
+    padding: 0 0 2% 0;
+    margin-left: 5%;
+    white-space: nowrap; /* Ensures text does not wrap */
+  }
+  
+  .Page-One-paragraph {
+    font-size: 1.2rem;
+    margin-left: 5%;
+  }
+  
+  .Page-One-Button {
+    display: block;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #85ae5d;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 1.5rem 0;
+    background: #85ae5d;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-left: 5%;
+  }
+  
+  .Boba-Pic {
+    width: 50rem;
+    transform: rotate(15deg);
+    margin-left: auto; /* Aligns image to the right */
+    margin-bottom: 10%;
+  }
 
 
  
