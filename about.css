@@ -70,6 +70,10 @@ nav {
         color: black;
     }
 
+    .links ul li.active a {
+        color: black;
+    }
+
     .links ul li.active::after{
         content: '';
         width: 100%;
