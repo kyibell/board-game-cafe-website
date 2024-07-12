@@ -12,24 +12,28 @@
 </head>
 <body>
     <!-- Header Content -->
-    <header class="header-fixedheader">
-        <a href="index.html" id="logo"><img src="/sipnplay.png" /></a>
-        <ul class="links">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./menu.html">Menu</a></li>
-          <li><a href="./Reservation.html">Reservations</a></li>
-          <li>
-            <a
-              href="https://docs.google.com/spreadsheets/d/1-TOvwUh-ziCB6QmLYvQlxtXuBd-aGiiO72GWAasby8o/edit?usp=sharing"
-              >Our Games</a
-            >
-          </li>
-          <li>
-            <a href="https://squareup.com/gift/SWP5P3242C38Q/order">Gift Cards</a>
-          </li>
-          <li><a href="./Contacts.html">Contact Us</a></li>
-        </ul>
+    <nav>
+        <a href="index.html"><img src="./sipnplay.png" id="Logo" /></a>
+        <div class="links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li class="active"><a href="./menu.html">Menu</a></li>
+            <li><a href="./Reservation.html">Reservations</a></li>
+            <li>
+              <a
+                href="https://docs.google.com/spreadsheets/d/1-TOvwUh-ziCB6QmLYvQlxtXuBd-aGiiO72GWAasby8o/edit?usp=sharing"
+                >Our Games</a
+              >
+            </li>
+            <li>
+              <a href="https://squareup.com/gift/SWP5P3242C38Q/order"
+                >Gift Cards</a
+              >
+            </li>
+            <li><a href="./Contacts.html">Contact Us</a></li>
+          </ul>
+        </div>
         <div class="social-media">
           <a href="https://www.instagram.com/sipnplaynyc/?hl=en"
             ><i class="fa-brands fa-instagram"></i
@@ -41,24 +45,25 @@
             ><i class="fa-brands fa-discord"></i
           ></a>
         </div>
-      </header>
+      </nav>
       <!-- Navigation  -->
+      <div class="menu-container">
       <div class="navigation"> 
         <h2>Menu</h2>
         <div class="nav-links"> 
             <ul>
-                <li><a href="">Coffee</a></li>
-                <li><a href="">Specialty Drinks</a></li>
-                <li><a href="">Boba</a></li>
-                <li><a href="">Hot Bites</a></li>
-                <li><a href="">Sandwiches & Salads</a></li>
-                <li><a href="">Seasonal Menu</a></li>
-                <li><a href="">Beer & Wine</a></li>
+                <li><a href="#coffee">Coffee</a></li>
+                <li><a href="#specialty-drinks">Specialty Drinks</a></li>
+                <li><a href="#boba">Boba</a></li>
+                <li><a href="#hot-bites">Hot Bites</a></li>
+                <li><a href="#sandwiches-and-salads">Sandwiches & Salads</a></li>
+                <li><a href="#seasonal">Seasonal Menu</a></li>
+                <li><a href="#beer-and-wine">Beer & Wine</a></li>
             </ul>
         </div>
       </div>
       <!-- Coffee Section of the Menu -->
-      <div class="coffee-section">
+      <div class="coffee-section" id="coffee">
         <div class="coffee-items">
             <ul>
                 <li>Latte. ............... $4.75(H) / $5.25 (C) </li>
@@ -71,9 +76,10 @@
                 <li>Cafe Au Lait. ............... $3.25(H)</li>
             </ul>
         </div>
-        <div class="coffee-model"> </div>
-      </div>
-      <div class="specialty-drink-section"> 
+        <div class="coffee-model"> coffee model </div>
+    </div>
+      <div class="specialty-drink-section" id="specialty-drinks"> 
+        <div class="specialty-drink-model">  </div>
         <div class="specialty-drink-items"> 
             <ul>
                 <li>Matcha Latte. ............... $5.25(H) / $5.75(C) </li>
@@ -87,9 +93,8 @@
                 <li>Bumblebee Latte. ............... $6.25 (H) / $6.75(C) </li>
             </ul>
         </div>
-        <div class="specialty-drink-model"> </div>
     </div>
-    <div class="boba-section">
+    <div class="boba-section" id="boba">
         <div class="boba-items">
             <ul>
                 <li> The OG (Classic Milk Tea). ............... $4.25(M) / $5.75(L) / 5.25(H) </li>
@@ -101,10 +106,11 @@
                 <li> Jasimine Milk Tea Winter Melon Milk Tea (Dairy Free). ............... $4.25(M) / $5.25(L) / 5.25(H) </li>
                 <li> Toppings. (Tapioca pearls, lychee jelly, mixed jelly, grass jelly, pop strawberry, pop passionfruit, mango stars) ............... +$0.50 </li>
             </ul>
-            <div class="boba-model"> </div>
         </div>
+        <div class="boba-model"> </div>
     </div>
-    <div class="hot-bites-section"> 
+    <div class="hot-bites-section" id="hot-bites"> 
+        <div class="hot-bites-model">  </div>
         <div class="hot-bites-items">
             <ul>
                 <li>Chicken Poppers. ............... $6.00 </li>
@@ -117,9 +123,8 @@
                 <li>Sweet Potato Fries $6.00 </li>
             </ul>
         </div>
-        <div class="hot-bites-model"> </div>
     </div>
-    <div class="sandwiches-and-salads-section"> 
+    <div class="sandwiches-and-salads-section" id="sandwiches-and-salads"> 
         <div class="sandwiches-and-salads-items">
             <ul>
                 <li>Beyond Bussin Sandiwch (VEGAN sandwich highlighting the beyond burger and our house-made vegan chipotle aioli alongside lettuce, onion and avocado.).
@@ -136,9 +141,10 @@
                 <li>Avocado Toast (Avocado mashed with salt, pepper, lemon juice and olive oil on toasted heritage wheat). ............... $10.00 (+egg: +$1.00)</li>
             </ul>
         </div>
-        <div class=sandwich-model> </div>
+        <div class=sandwich-model></div>
     </div>
-    <div class="seasonal-section">
+    <div class="seasonal-section" id="seasonal">
+        <div class="seasonal-model"> </div>
         <div class="seasonal-items"> 
             <ul>
                 <li> Pina Colada (Our coconut boba with pineapple flavor!). ............... $4.75(M) / $5.75(L)</li>
@@ -152,9 +158,9 @@
                 <li>Rotating Beer/Wine Program. ............... Check out our beer and wine at the front of the store! We're constantly rotating out product from local breweries! </li>
             </ul>
         </div>
-        <div class="seasonal-model"> </div>
+        
     </div>
-    <div class="beer-and-wine-section"> 
+    <div class="beer-and-wine-section" id="beer-and-wine"> 
         <div class="beer-and-wine-items">
             <p> Main Lineup: </p>
             <ul>
@@ -175,12 +181,37 @@
         </div>
         <div class="beer-wine-model"> </div>
     </div>
-    <footer> 
-        <p>&copy; 2024 Sip & Play</p> 
-        <div class="social-icons"> 
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a> 
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-        </div> 
-    </footer>
-</body>
-</html>
+</div>
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="footer-container">
+          <div class="left-section">
+            <div class="contact-info">
+              <i class="fa-solid fa-phone"><span> 718-971-1684</span> </i>
+              <i class="fa-solid fa-envelope">
+                <a href="mailto:sipnplaynyc@gmail.com"
+                  >sipnplaynyc@gmail.com</a
+                ></i
+              >
+            </div>
+          </div>
+          <div class="right-section">
+            <div class="social-media">
+              <a href="https://www.instagram.com/sipnplaynyc/?hl=en"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.facebook.com/sipnplaynyc/"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://discord.com/invite/bdURvWC"
+                ><i class="fa-brands fa-discord"></i
+              ></a>
+            </div>
+            <div class="copyright">
+              <p>&copy; 2020 by Sip & Play</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </body>
+      </html>
