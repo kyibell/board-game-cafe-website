@@ -166,7 +166,7 @@ form input, form textarea, form button {
 
 /* Button styles */
 form button {
-    background-color: #85AE5D;
+    background-color: #53c96b;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -204,6 +204,41 @@ form button:hover {
     display: block;
     margin-bottom: 10px;
   }
+  
+  .right-section {
+    text-align: right;
+  }
+  
+  .social-media {
+    margin-bottom: 10px;
+  }
+  
+  .social-media a {
+    margin-right: 10px;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .fa-envelope a{
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .fa-phone span{
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .social-media a:last-child {
+    margin-right: 0;
+  }
+  
+  .copyright {
+    text-align: right;
+  }
+  
   
   .right-section {
     text-align: right;
