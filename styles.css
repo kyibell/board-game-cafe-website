@@ -104,5 +104,75 @@
     background-color: #DEE9D3;
 }
 
+.page-two-title{
+  position:relative; 
+  text-align: center;
+  padding-top: 13%;
+  font-size: 6rem;
+}
  
+.page-two-paragraph{
+  padding: 5% 25%;
+  position:relative; 
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.page-three { 
+  width: 100%;
+  height: 100vh;
+  background-color: #71865B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.content-wrapper {
+  display: flex;
+}
+
+.google-map {
+  position: relative;
+}
+
+.google-map iframe {  
+  border-radius: 10px;
+}
+
+.business-hours {
   
+  color: #ffffff;
+  max-width: 600px;
+  margin-top: 5%;
+  padding: 30px;
+}
+
+.day-time {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  line-height: 3rem;
+}
+
+.day {
+  flex: 1;
+}
+
+.time {
+  flex: 1;
+  text-align: right;
+}
+
+.reserve-button {
+  color: white;
+  text-decoration: none;
+  border: 1px solid #85ae5d;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 1% 0 0 15%;
+  background: #85ae5d;
+  font-weight: 600;
+  border-radius: 10px;
+}
